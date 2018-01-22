@@ -1,0 +1,156 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+\usepackage{lmodern}
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{ref.bib}
+
+
+% Set applicant's personal data for header
+\name{Sanjeev Kumar}
+\address{Felsennelkenanger 13 \linebreak Munich 80937}
+\contacts{+49 123456789 \linebreak sanjeev90an@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% academic projects
+	\begin{cvsection}{Academic Projects}
+	\begin{cvsubsection}[2]{Master Thesis}{CAMP\footnote{\href{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}{Computer Vision Team, Computer Aided Medical Procedures, Technical University of Munich}}, Technical University of Munich}{June 2017 -- Present}
+    Multiple Action Prediction in Reinforcement Learning (Python, Tensorflow, OpenAI Gym) \cite{anonymous2018predicting}
+        \begin{itemize}
+	        \item Proposed a new formulation for policy gradient reinforcement learning algorithms in continuous action space problems.
+	        \item The method predicts multiple action values at each state which facilitates better exploration during training and the agent converges to a better policy.
+	        \item Evaluated and compared the performance of the proposed formulation against other continuous control algorithms (A3C, DDPG) on various Mujoco environments.
+	    \end{itemize}
+	\end{cvsubsection}
+	
+	\begin{cvsubsection}{Inter-Disciplinary Project}{Technical University of Munich}{Oct 2016 -- Mar 2017}
+	Cell Detection in Lens-free Microscopy Videos (Python, Keras) \cite{rempfler-2017}
+    	\begin{itemize}
+    	\item This aim of the project was to detect and localize cells in lens free microscopy image sequences using deep convolutional neural networks (CNN).
+        \item In this we experimented with different deep CNN architectures (FCN, UNet, DetectNet) and achieved best detection score of 95\% (F1) with fully convolutional ResNet-50.
+    	\end{itemize}
+	\end{cvsubsection}
+	
+	\end{cvsection}
+	
+	% work experience
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Machine Learning Engineer}{Logivations Gmbh}{April 2017 - Present}
+			Identification Workplace			
+			\begin{itemize}
+				\item Applied various object detection algorithms (RFCN, Faster RCNN, Yolo etc.) for detecting different warehouse objects.
+				\item Designed and implemented framework to integrate and deploy new models easily across different platforms.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- Present}	
+		Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{Tracking and Detection in Computer Vision}}
+			\begin{itemize}
+				\item The course is regularly offered to master students at TU Munich and is attended by more than 100 students. 
+				\item Involved in creating assignments for the course and helped students with the homework. 
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Machine Learning Engineer}{Terraloupe Gmbh}{Aug 2017 - April 2017}
+			Roof Object Segmentation (Python, Keras, Shapely)
+			\begin{itemize}
+				\item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
+				\item Implemented various computational geometric algorithms (polygon merge, line merge etc.) to generate refined shape boundaries for detected objects.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Development Engineer}{Amazon, India}{Oct 2014 -- Oct 2015}		
+		Missed Call Based Expiry (Java, SQS, DynamoDB)
+			\begin{itemize}
+				\item Developed an application which sends notifications(SMS, email) to customers for older ads live on junglee.com and customers can then delete their ads by giving a missed call on a toll free number. 
+                \item Using this mechanism, the Ad Defect Rate on junglee.com went down by 15\%.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Senior Software Developer}{Drishti Soft Solutions, India}{June 2012 -- Sept 2014}
+			REST API for Ameyo (Java, Xtend, Jersey)
+			\begin{itemize}
+				\item Designed REST based APIs for Ameyo (Drishti's call center software suite). The APIs were modeled in ecore domain model and wrote a code generator plugin in eclipse for generating Java code for APIs. 
+				\item This API provided the framework to develop call center applications easily.
+			\end{itemize}
+			
+			Stats Manager (Java, H2)
+			\begin{itemize}
+				\item Designed and implemented a module for generating real time call center statistics. 
+				\item The module listened to call center application events and maintained in-memory database of stats which could be consumed by API calls or by subscribing to notifications.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+  \newpage
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- Mar 2018}
+			\begin{itemize}
+				\item M.Sc. in Informatics, GPA: 1.9/1.0
+				\item Graduate Coursework: Machine Learning; Variational Methods; Deep Learning for Computer Vision; Vision Based Navigation; Programming Languages; Tracking and Detection
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Hamirpur, India}{National Institute of Technology}{July 2008 -- May 2012}
+			\begin{itemize}
+				\item B.Tech. in Computer Science and Engineering,  CGPA: 7.69/10
+				\item Undergraduate Coursework: Object Oriented Programming; Data Structure and Algorithms; Theory of Computation; Operating System; Computer Networks 
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Third Prize, Junglee Hackathon:} Participated in annual hackathon at Amazon and won third prize in Hackathon’15.
+				\item \textbf{Excellence Award:} Awarded with Drishti Excellence Award in October 2013, for gaining domain knowledge quickly and delivering projects on time.
+				\item Mentored interns and took training sessions of new employees at Drishti and Amazon.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item Python (Advanced); Java (Advanced); C++ (Intermediate); C (Intermediate); Matlab (Basic)
+				\item Tensorflow; OpenCV; ROS; REST
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+		\begin{cvsection}{References}
+
+     	\printbibliography[heading=none]
+
+	\end{cvsection}
+	
+\end{document}
