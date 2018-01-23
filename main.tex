@@ -26,7 +26,13 @@
 % For mathematical symbols
 \usepackage{amsmath}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Maroon, urlcolor=Maroon, citecolor=blue]{hyperref}
+\usepackage[symbol]{footmisc}
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 
 \usepackage[backend=biber]{biblatex}
 \addbibresource{ref.bib}
@@ -44,7 +50,7 @@
 	
 	% academic projects
 	\begin{cvsection}{Academic Projects}
-	\begin{cvsubsection}[2]{Master Thesis}{CAMP\footnote{\href{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}{Computer Vision Team, Computer Aided Medical Procedures, Technical University of Munich}}, Technical University of Munich}{June 2017 -- Present}
+	\begin{cvsubsection}[2]{Master Thesis}{CAMP\footnote{\href{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}}, Technical University of Munich}{June 2017 -- Present}
     Multiple Action Prediction in Reinforcement Learning (Python, Tensorflow, OpenAI Gym) \cite{anonymous2018predicting}
         \begin{itemize}
 	        \item Proposed a new formulation for policy gradient reinforcement learning algorithms in continuous action space problems.
@@ -65,7 +71,16 @@
 	
 	% work experience
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Machine Learning Engineer}{Logivations Gmbh}{April 2017 - Present}
+	
+			\begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- Present}	
+		Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{http://campar.in.tum.de/Chair/TeachingWs17TDCV}}
+			\begin{itemize}
+				\item The course is regularly offered to master students at TU Munich and is attended by more than 100 students. 
+				\item Involved in creating assignments for the course and helped students with the homework. 
+			\end{itemize}
+		\end{cvsubsection}
+	
+		\begin{cvsubsection}{Machine Learning Engineer\footnote{Work Student\label{ws}}}{Logivations Gmbh}{April 2017 - Present}
 			Identification Workplace			
 			\begin{itemize}
 				\item Applied various object detection algorithms (RFCN, Faster RCNN, Yolo etc.) for detecting different warehouse objects.
@@ -73,15 +88,7 @@
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- Present}	
-		Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{Tracking and Detection in Computer Vision}}
-			\begin{itemize}
-				\item The course is regularly offered to master students at TU Munich and is attended by more than 100 students. 
-				\item Involved in creating assignments for the course and helped students with the homework. 
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Machine Learning Engineer}{Terraloupe Gmbh}{Aug 2017 - April 2017}
+		\begin{cvsubsection}{Machine Learning Engineer \textsuperscript{\ref{ws}}}{Terraloupe Gmbh}{Aug 2017 - April 2017}
 			Roof Object Segmentation (Python, Keras, Shapely)
 			\begin{itemize}
 				\item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
