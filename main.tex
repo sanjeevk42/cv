@@ -34,130 +34,167 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber,sorting=none]{biblatex}
 \addbibresource{ref.bib}
 
 
 % Set applicant's personal data for header
 \name{Sanjeev Kumar}
-\address{Felsennelkenanger 13 \linebreak Munich 80937}
-\contacts{+49 15211918761 \linebreak sanjeev90an@gmail.com}
+\email{sanjeev.kumar@in.tum.de}
+\github{https://github.com/sanjeevk42}
+\linkedin{https://linkedin.com/in/sanjeevk42}
+
+
+\address{Phone: +49 15211918761 \linebreak Address: Felsennelkenanger 13 \linebreak Munich 80937}
+\contacts{}
+
 
 \begin{document}
 
-	% Print the header
-	\makeheader
-	
-	% academic projects
-	\begin{cvsection}{Academic Projects}
-	\begin{cvsubsection}[2]{Master Thesis}{CAMP\footnote{\href{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}}, Technical University of Munich}{June 2017 -- Present}
-    Multiple Action Prediction in Deep Reinforcement Learning (Python, Tensorflow, OpenAI Gym) \cite{anonymous2018predicting}
+    % Print the header
+    \makeheader
+    
+    % academic projects
+    \begin{cvsection}{Academic Projects}
+    \begin{cvsubsection}[2]{Master Thesis}{CAMP\footnote{\href{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}{http://campar.in.tum.de/Chair/ResearchIssueComputerVision}}, Technical University of Munich}{June 2017 -- Feb 2018}
+    \textit{Multiple Action Prediction in Deep Reinforcement Learning (Python, Tensorflow, OpenAI Gym)}
         \begin{itemize}
-	        \item Proposed a new formulation for policy gradient reinforcement learning algorithms in continuous action space problems.
-	        \item The method predicts multiple action values at each state which facilitates better exploration during training and the agent converges to a better policy.
-	        \item Evaluated and compared the performance of the proposed formulation against other continuous control algorithms (A3C, DDPG) on various Mujoco environments.
-	    \end{itemize}
-	\end{cvsubsection}
-	
-	\begin{cvsubsection}{Inter-Disciplinary Project}{Technical University of Munich}{Oct 2016 -- Mar 2017}
-	Cell Detection in Lens-free Microscopy Videos (Python, Keras) \cite{rempfler-2017}
-    	\begin{itemize}
-    	\item This aim of the project was to detect and localize cells in lens free microscopy image sequences using deep convolutional neural networks (CNN).
-        \item In this we experimented with different deep CNN architectures (FCN, UNet, DetectNet) and achieved best detection score of 95\% (F1) with fully convolutional ResNet-50.
-    	\end{itemize}
-	\end{cvsubsection}
-	
-	\end{cvsection}
-	
-	% work experience
-	\begin{cvsection}{Employment}
-	
-			\begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- Present}	
-		Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{http://campar.in.tum.de/Chair/TeachingWs17TDCV}}
-			\begin{itemize}
-				\item The course is regularly offered to master students at TU Munich and is attended by more than 100 students. 
-				\item Involved in creating assignments for the course and helped students with the homework. 
-			\end{itemize}
-		\end{cvsubsection}
-	
-		\begin{cvsubsection}{Machine Learning Engineer\footnote{Work Student\label{ws}}}{Logivations Gmbh}{April 2017 - Present}
-			Identification Workplace			
-			\begin{itemize}
-				\item Applied various object detection algorithms (RFCN, Faster RCNN, Yolo etc.) for detecting different warehouse objects.
-				\item Designed and implemented framework to integrate and deploy new models easily across different platforms.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Machine Learning Engineer \textsuperscript{\ref{ws}}}{Terraloupe Gmbh}{Aug 2016 - April 2017}
-			Roof Object Segmentation (Python, Keras, Shapely)
-			\begin{itemize}
-				\item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
-				\item Implemented various computational geometric algorithms (polygon merge, line merge etc.) to generate refined shape boundaries for detected objects.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Development Engineer}{Amazon, India}{Oct 2014 -- Oct 2015}		
-		Missed Call Based Expiry (Java, SQS, DynamoDB)
-			\begin{itemize}
-				\item Developed an application which sends notifications(SMS, email) to customers for older ads live on junglee.com and customers can then delete their ads by giving a missed call on a toll free number. 
+            \item Proposed a new formulation for policy gradient reinforcement learning algorithms in continuous action space problems.
+            \item The method predicts multiple action values at each state which facilitates better exploration during training and the agent converges to a better policy.
+            \item Evaluated and compared the performance of the proposed formulation against other continuous control algorithms (A3C, DDPG, SVG(0)) on various Mujoco environments and TORCS car simulator for driving task.
+        \end{itemize}
+    \end{cvsubsection}
+    
+    \begin{cvsubsection}{Inter-Disciplinary Project}{Technical University of Munich}{Oct 2016 -- Mar 2017}
+    \textit{Cell Detection in Lens-free Microscopy Videos (Python, Keras) \cite{rempfler-2017}}
+        \begin{itemize}
+        \item The aim of the project was to detect and localize cells in lens-free microscopy image sequences using deep convolutional neural networks (CNN).
+        \item In this project, we experimented with different deep CNN architectures (FCN, UNet, DetectNet) and achieved best detection score of 95\% (F1) with fully convolutional ResNet-50.
+        \end{itemize}
+    \end{cvsubsection}
+    
+    \end{cvsection}
+    
+    % work experience
+    \begin{cvsection}{Employment}
+    
+            \begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- March 2018}    
+        \textit{Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{http://campar.in.tum.de/Chair/TeachingWs17TDCV}}}
+            \begin{itemize}
+                \item The course is offered every winter semester to master students at TU Munich and is attended by more than 100 students. 
+                \item Involved in creating assignments for the course and helped students with the homework. 
+            \end{itemize}
+        \end{cvsubsection}
+    
+        \begin{cvsubsection}{Machine Learning Engineer\footnote{Work Student\label{ws}}}{Logivations Gmbh}{April 2017 - March 2018}
+            \textit{Multi Label Classification Using Learning by Association (Python, Tensorflow)}
+            \begin{itemize}
+                \item Extended the semi-supervised image classification approach purposed by Haeusser at el. \cite{haeusser-cvpr-17} to multi-label classification.
+                \item Achieved test error of 1.7\% on the artificially generated multi-label MNIST dataset using 10 supervised samples per class and 5000 total unsupervised samples. The test error without unsupervised samples was around 20\%.
+            \end{itemize}
+            
+            \textit{Identification Workplace (Python, C++, Keras)}
+            \begin{itemize}
+                \item Applied object detection algorithms (RFCN, Faster RCNN, Yolo etc.) for detecting warehouse objects.
+                \item Designed and implemented a framework to integrate and deploy new models developed on a variety of deep learning frameworks (tensorflow, caffe, pytorch etc.) easily across multiple hardware platforms (Nvidia Jetson, Raspberry Pi etc.).
+            \end{itemize}
+            
+            \textit{Barcode Detector and Decoder (Python, Caffe)}
+            \begin{itemize}
+                \item Developed an application which detected and decoded the barcodes of different items placed on a truck coming into the warehouse. The continuous video feed was captured by a PTZ camera and barcodes were decoded by zooming onto the specific location where barcode was detected.
+                \item The detection of barcodes was done using RFCN.
+            \end{itemize}
+            
+        \end{cvsubsection}
+        
+        \begin{cvsubsection}{Machine Learning Engineer \textsuperscript{\ref{ws}}}{Terraloupe Gmbh}{Aug 2016 - April 2017}
+            \textit{Roof Area Estimation (Python, Keras, Shapely)}
+            \begin{itemize}
+                \item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
+                \item Implemented computational geometric algorithms (polygon merge, line merge etc.) to generate refined shape boundaries for detected objects. The roof area was calculated from the point cloud of given region and roof object boundaries.
+            \end{itemize}
+        \end{cvsubsection}
+
+  \newpage        
+          
+        \begin{cvsubsection}{Software Development Engineer}{Amazon, India}{Oct 2014 -- Oct 2015}        
+        \textit{Missed Call Based Expiry (Java, SQS, DynamoDB)}
+            \begin{itemize}
+                \item Developed an application which sends notifications (SMS, email) to customers for older ads live on junglee.com and customers can then delete their ads by giving a missed call on a toll-free number. 
                 \item Using this mechanism, the Ad Defect Rate on junglee.com went down by 15\%.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Senior Software Developer}{Drishti Soft Solutions, India}{June 2012 -- Sept 2014}
-			REST API for Ameyo (Java, Xtend, Jersey)
-			\begin{itemize}
-				\item Designed REST based APIs for Ameyo (Drishti's call center software suite). The APIs were modeled in ecore domain model and wrote a code generator plugin in eclipse for generating Java code for APIs. 
-				\item This API provided the framework to develop call center applications easily.
-			\end{itemize}
-			
-			Stats Manager (Java, H2)
-			\begin{itemize}
-				\item Designed and implemented a module for generating real time call center statistics. 
-				\item The module listened to call center application events and maintained in-memory database of stats which could be consumed by API calls or by subscribing to notifications.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-  \newpage
-	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- Mar 2018}
-			\begin{itemize}
-				\item M.Sc. in Informatics, GPA: 1.9/1.0
-				\item Graduate Coursework: Machine Learning; Variational Methods; Deep Learning for Computer Vision; Vision Based Navigation; Programming Languages; Tracking and Detection
-			\end{itemize}
-		\end{cvsubsection}
-		\begin{cvsubsection}{Hamirpur, India}{National Institute of Technology}{July 2008 -- May 2012}
-			\begin{itemize}
-				\item B.Tech. in Computer Science and Engineering,  CGPA: 7.69/10
-				\item Undergraduate Coursework: Object Oriented Programming; Data Structure and Algorithms; Theory of Computation; Operating System; Computer Networks 
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \textbf{Third Prize, Junglee Hackathon:} Participated in annual hackathon at Amazon and won third prize in Hackathon’15.
-				\item \textbf{Excellence Award:} Awarded with Drishti Excellence Award in October 2013, for gaining domain knowledge quickly and delivering projects on time.
-				\item Mentored interns and took training sessions of new employees at Drishti and Amazon.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item Python (Advanced); Java (Advanced); C++ (Intermediate); C (Intermediate); Matlab (Basic)
-				\item Tensorflow; OpenCV; ROS; REST
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-		\begin{cvsection}{References}
+            \end{itemize}
+        \end{cvsubsection}
 
-     	\printbibliography[heading=none]
+        \begin{cvsubsection}{Senior Software Developer}{Drishti Soft Solutions, India}{June 2012 -- Sept 2014}
+            \textit{REST API for Ameyo (Java, Xtend, Jersey)}
+            \begin{itemize}
+                \item Designed REST-based APIs for Ameyo (Drishti's call center software suite). The project involved building a domain specific language (DSL) for API modeling and writing a code generator for generating application artifacts such as java glue code, documentation.
+                \item This API provided a framework for third parties to integrate call center functionalities into their applications.
+            \end{itemize}
+            
+            \textit{Stats Manager (Java, H2)}
+            \begin{itemize}
+                \item Designed and implemented a module for generating real-time call center statistics. 
+                \item The module listened to call center application events and maintained an in-memory database of stats which could be consumed by API calls or by subscribing to notifications.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
 
-	\end{cvsection}
-	
+    \begin{cvsection}{Education}
+        \begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- April 2018}
+            \begin{itemize}
+                \item M.Sc. in Informatics, GPA: 1.7/1.0
+                \item Graduate Coursework: Machine Learning; Variational Methods; Multiple View Geometry; Deep Learning for Computer Vision; Vision Based Navigation; Virtual Machines; Mining Massive Datasets.
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Hamirpur, India}{National Institute of Technology}{July 2008 -- May 2012}
+            \begin{itemize}
+                \item B.Tech. in Computer Science and Engineering,  CGPA: 7.69/10.0
+                \item Undergraduate Coursework: Object Oriented Programming; Data Structure and Algorithms; Theory of Computation; Operating System; Computer Networks; Computer Architecture.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+    \begin{cvsection}{Technical Skills}
+        \begin{cvsubsection}{}{}{}    
+            \begin{itemize}
+                \item Programming Languages: Python (Advanced), Java (Advanced), C++ (Intermediate), C (Intermediate), Matlab (Intermediate), JavaScript (Basic).
+                \item ML/CV Toolkits: Tensorflow, Caffe, Keras, OpenCV, ROS, SciPy, Rasterio.
+                \item Application Developement: REST, Apache Tomcat, Spring, Hibernate, Xtend, Eclipse Modeling Framework, PostgreSQL, Flask.
+                \item Others: Git, GNU/Linux, LaTeX, Docker, Amazon Web Services.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+    \begin{cvsection}{Additional Experience and Awards}
+        \begin{cvsubsection}{}{}{}    
+            \begin{itemize}
+                \item Awarded with Drishti Excellence Award in October 2013, for gaining domain knowledge quickly and delivering projects on time.
+                \item Won first prize twice (2012 and 2014) in yearly hackathons at Drishti.
+                \item Participated in the annual hackathon at Amazon and won third prize in Junglee Hackathon’15.
+                \item Scored 98.3 percentile in Computer Science Graduate Aptitude Test in Engineering (GATE-2012) among 156000 applicants from all over India.
+                \item Achieved state rank 72 (Himachal Pradesh) in All India Engineering Entrance Exam (AIEEE-2008).
+                \item Served as coordinator of Computer Science and Engineering Department in Nimbus'11 (annual technical festival of NIT Hamirpur) and was responsible for organizing technical events.
+%                \item Received first prize in coding competitions Dirty Code and Code Crypt during Nimbus’12
+                \item Revived GNU/Linux Users Group (GLUG-NITH) at NIT Hamirpur and organized introductory Linux workshops for first-year students.
+                \item Participated in training process at Drishti and delivered training sessions for employees on topics such as Model Driven Architecture, Service Oriented Architecture and Code Generation.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+    \begin{cvsection}{Languages}
+        \begin{cvsubsection}{}{}{}    
+            \begin{itemize}
+                \item English (Full Professional Proficiency), German (A1 Level), Hindi (Native).
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+        \begin{cvsection}{References}
+
+         \printbibliography[heading=none]
+
+    \end{cvsection}
+    
 \end{document}

@@ -136,12 +136,27 @@
 \newcommand\name[1]{\def\@name{#1}}
 \name{}
 
+\newcommand\email[1]{\def\@email{#1}}
+\email{}
+
+\newcommand\github[1]{\def\@github{#1}}
+\github{}
+
+\newcommand\linkedin[1]{\def\@linkedin{#1}}
+\linkedin{}
+
 \newcommand\printname{
 	\typeout {kokoko}
 	\typeout \spaceskip
 	\spaceskip \namespaceskip \relax
-	\textbf{\LARGE\textls[110]{\textbf{\textsc{\@name}}}}
+	\textbf{\LARGE\textls[110]{\textbf{\textsc{\@name}}}} \linebreak \linebreak
+	\small{Email: \href{mailto:\@email}{\@email}}      \linebreak
+	\small{Github: \href{\@github}{\@github}}   \linebreak
+	\small{Linkedin: \href{\@linkedin}{\@linkedin}} \linebreak
 }
+
+
+
 
 \makeatother
 
@@ -160,8 +175,8 @@
 \makeatletter
 \newcommand\makeheader{
 	\begin{center}
-		\begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
-			\printaddress & \printname & \printcontacts \\
+		\begin{tabu} to 1\textwidth { X[l,m] X[.4,c,m] X[r,m] }
+			\printname & \printcontacts & \printaddress \\
 		\end{tabu}	
 	\end{center}
 	\vspace*{\afterheaderspace}
