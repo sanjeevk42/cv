@@ -40,7 +40,7 @@
 
 % Set applicant's personal data for header
 \name{Sanjeev Kumar}
-\email{sanjeev.kumar@in.tum.de}
+\email{sanjeev90an@gmail.com}
 \github{https://github.com/sanjeevk42}
 \linkedin{https://linkedin.com/in/sanjeevk42}
 
@@ -77,6 +77,14 @@
     
     % work experience
     \begin{cvsection}{Employment}
+
+            \begin{cvsubsection}{Software Engineer}{Lyft Germany Gmbh}{Aug 2018 -- Present}    
+        \textit{Detection of Road Surface for Automatic Map Building}
+            \begin{itemize}
+                \item Developing machine learning models for automatic detection of road surface elements (lane boundaries, crosswalks etc.) for building the map. 
+                \item The map is used by prediction and planning for finding the car trajectory.
+            \end{itemize}
+        \end{cvsubsection}
     
             \begin{cvsubsection}{Student Tutor}{Technical University of Munich}{Oct 2017 -- March 2018}    
         \textit{Tracking and Detection in Computer Vision (IN2210) \footnote{\href{http://campar.in.tum.de/Chair/TeachingWs17TDCV}{http://campar.in.tum.de/Chair/TeachingWs17TDCV}}}
@@ -86,20 +94,14 @@
             \end{itemize}
         \end{cvsubsection}
     
-        \begin{cvsubsection}{Machine Learning Engineer\footnote{Work Student\label{ws}}}{Logivations Gmbh}{April 2017 - March 2018}
+        \begin{cvsubsection}{Work Student\footnote{Machine Learning and Computer Vision\label{ws}}}{Logivations Gmbh}{April 2017 - March 2018}
             \textit{Multi Label Classification Using Learning by Association (Python, Tensorflow)}
             \begin{itemize}
                 \item Extended the semi-supervised image classification approach purposed by Haeusser at el. \cite{haeusser-cvpr-17} to multi-label classification.
                 \item Achieved test error of 1.7\% on the artificially generated multi-label MNIST dataset using 10 supervised samples per class and 5000 total unsupervised samples. The test error without unsupervised samples was around 20\%.
             \end{itemize}
-            
-            \textit{Identification Workplace (Python, C++, Keras)}
-            \begin{itemize}
-                \item Applied object detection algorithms (RFCN, Faster RCNN, Yolo etc.) for detecting warehouse objects.
-                \item Designed and implemented a framework to integrate and deploy new models developed on a variety of deep learning frameworks (tensorflow, caffe, pytorch etc.) easily across multiple hardware platforms (Nvidia Jetson, Raspberry Pi etc.).
-            \end{itemize}
-            
-            \textit{Barcode Detector and Decoder (Python, Caffe)}
+                
+            \textit{Barcode Detector and Decoder (Python, C++, Caffe)}
             \begin{itemize}
                 \item Developed an application which detected and decoded the barcodes of different items placed on a truck coming into the warehouse. The continuous video feed was captured by a PTZ camera and barcodes were decoded by zooming onto the specific location where barcode was detected.
                 \item The detection of barcodes was done using RFCN.
@@ -107,7 +109,7 @@
             
         \end{cvsubsection}
         
-        \begin{cvsubsection}{Machine Learning Engineer \textsuperscript{\ref{ws}}}{Terraloupe Gmbh}{Aug 2016 - April 2017}
+        \begin{cvsubsection}{Work Student\textsuperscript{\ref{ws}}}{Terraloupe Gmbh}{Aug 2016 - April 2017}
             \textit{Roof Area Estimation (Python, Keras, Shapely)}
             \begin{itemize}
                 \item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
@@ -125,7 +127,7 @@
             \end{itemize}
         \end{cvsubsection}
 
-        \begin{cvsubsection}{Senior Software Developer}{Drishti Soft Solutions, India}{June 2012 -- Sept 2014}
+        \begin{cvsubsection}{Senior Software Developer}{Drishti Soft Solutions, India}{June 2012 -- Oct 2014}
             \textit{REST API for Ameyo (Java, Xtend, Jersey)}
             \begin{itemize}
                 \item Designed REST-based APIs for Ameyo (Drishti's call center software suite). The project involved building a domain specific language (DSL) for API modeling and writing a code generator for generating application artifacts such as java glue code, documentation.
@@ -142,7 +144,7 @@
     
 
     \begin{cvsection}{Education}
-        \begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- April 2018}
+        \begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- March 2018}
             \begin{itemize}
                 \item M.Sc. in Informatics, GPA: 1.7/1.0
                 \item Graduate Coursework: Machine Learning; Variational Methods; Multiple View Geometry; Deep Learning for Computer Vision; Vision Based Navigation; Virtual Machines; Mining Massive Datasets.
@@ -159,8 +161,8 @@
     \begin{cvsection}{Technical Skills}
         \begin{cvsubsection}{}{}{}    
             \begin{itemize}
-                \item Programming Languages: Python (Advanced), Java (Advanced), C++ (Intermediate), C (Intermediate), Matlab (Intermediate), JavaScript (Basic).
-                \item ML/CV Toolkits: Tensorflow, Caffe, Keras, OpenCV, ROS, SciPy, Rasterio.
+                \item Programming Languages: Python (Advanced), C++ (Advanced), Java (Advanced), C (Intermediate), Matlab (Intermediate), JavaScript (Basic).
+                \item ML/CV Toolkits: Tensorflow, Caffe, PyTorch, Keras, OpenCV, ROS, SciPy, Rasterio.
                 \item Application Developement: REST, Apache Tomcat, Spring, Hibernate, Xtend, Eclipse Modeling Framework, PostgreSQL, Flask.
                 \item Others: Git, GNU/Linux, LaTeX, Docker, Amazon Web Services.
             \end{itemize}
@@ -170,15 +172,16 @@
     \begin{cvsection}{Additional Experience and Awards}
         \begin{cvsubsection}{}{}{}    
             \begin{itemize}
+                \item Participated in the annual hackathon at Amazon and won third prize in Junglee Hackathon’15.
                 \item Awarded with Drishti Excellence Award in October 2013, for gaining domain knowledge quickly and delivering projects on time.
                 \item Won first prize twice (2012 and 2014) in yearly hackathons at Drishti.
-                \item Participated in the annual hackathon at Amazon and won third prize in Junglee Hackathon’15.
+                \item Participated in training process at Drishti and delivered training sessions for employees on topics such as Model Driven Architecture, Service Oriented Architecture and Code Generation.
                 \item Scored 98.3 percentile in Computer Science Graduate Aptitude Test in Engineering (GATE-2012) among 156000 applicants from all over India.
-                \item Achieved state rank 72 (Himachal Pradesh) in All India Engineering Entrance Exam (AIEEE-2008).
+                \item Revived GNU/Linux Users Group (GLUG-NITH) at NIT Hamirpur and organized introductory Linux workshops for first-year students.
                 \item Served as coordinator of Computer Science and Engineering Department in Nimbus'11 (annual technical festival of NIT Hamirpur) and was responsible for organizing technical events.
 %                \item Received first prize in coding competitions Dirty Code and Code Crypt during Nimbus’12
-                \item Revived GNU/Linux Users Group (GLUG-NITH) at NIT Hamirpur and organized introductory Linux workshops for first-year students.
-                \item Participated in training process at Drishti and delivered training sessions for employees on topics such as Model Driven Architecture, Service Oriented Architecture and Code Generation.
+                \item Achieved state rank 72 (Himachal Pradesh) in All India Engineering Entrance Exam (AIEEE-2008).
+
             \end{itemize}
         \end{cvsubsection}
     \end{cvsection}
