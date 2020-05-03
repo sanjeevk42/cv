@@ -151,7 +151,7 @@
 	\spaceskip \namespaceskip \relax
 	\textbf{\LARGE\textls[110]{\textbf{\textsc{\@name}}}} \linebreak \linebreak
 	\small{Email: \href{mailto:\@email}{\@email}}      \linebreak
-	\small{Github: \href{\@github}{\@github}}   \linebreak
+%	\small{Github: \href{\@github}{\@github}}   \linebreak
 	\small{Linkedin: \href{\@linkedin}{\@linkedin}} \linebreak
 }
 
