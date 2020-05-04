@@ -58,7 +58,7 @@
 		\begin{cvsubsection}{Munich, Germany}{Technical University of Munich}{Oct 2015 -- March 2018}
 			\begin{itemize}
 				\item M.Sc. in Informatics (Specialization: Computer Vision and Machine Learning)
-				\item Inter-disciplinary Project: Cell Detection in Lens-free Microscopy Videos (published in MICCAI'17) \cite{rempfler-2017}
+				\item Inter-disciplinary Project: Cell Detection in Lens-free Microscopy Videos (published in \href{https://link.springer.com/chapter/10.1007/978-3-319-66185-8_1}{MICCAI'17})
 				\item Coursework: Machine Learning; Multiple View Geometry; Deep Learning for Computer Vision; Vision Based Navigation.
 			\end{itemize}
 		\end{cvsubsection}
@@ -74,12 +74,12 @@
 	% work experience
 	\begin{cvsection}{Professional Experience}
 		
-		\begin{cvsubsection}{Machine Learning Engineer}{Lyft Level 5, Self-Driving Division}{Aug 2018 -- Present}   
+		\begin{cvsubsection}{Machine Learning Engineer}{Lyft Level 5, Self-Driving Division, Munich}{Aug 2018 -- Present}   
 			\textit{ } \\
 			\textbf{Technologies Used}: Python, C++, PyTorch, OpenCV \\
 			\textbf{Semantic Map Generator}
 			\begin{itemize}
-				\item Primary contributor and owner of the component that generates the HD semantic map required for on car perception and planning.
+				\item Primary contributor and owner of the component that generates the HD semantic map required for on car perception, prediction and planning.
 				%The map has detailed information about different road elements and their connectivity e.g. lane boundaries, traffic lights etc.
 				\item Implemented different geo spatial algorithms and ML pipelines to speed the map creation with human annotators in the loop.
 			\end{itemize}
@@ -94,24 +94,24 @@
 			\textbf{Road Map Element Detection}
 			\begin{itemize}
 				\item Implemented an annotation pipeline for creating ground truth datasets to extract geometries for different types of road elements (lanes, crosswalks, arrows, etc.).
-				\item Led the implementation of semantic segmentation model training and shape extraction pipeline on orthographically projected camera images. 
-				\item Mentored an intern to integrate different road element models in QC tools and map generator.
+				\item Led the implementation of semantic segmentation model training and shape extraction pipeline on the top down views created from projected camera images. 
+				\item Mentored an intern to integrate different road element models in QC tools and Semantic Map Generator.
 			\end{itemize}
 			
 			\textbf{LiDAR Point Cloud Annotation}
 			\begin{itemize}
-				\item Designed and implemented a 3D detector (PointRCNN) and tracker (Kalman filter-based) pipeline to pre-populate object tracks to speed up the annotation of dynamic agents (cars, pedestrians, etc.) in the LiDAR point cloud.
-				\item Worked closely with the team in Palo Alto to integrate the tracker pipeline in the UI tool for point cloud annotation.
+				\item Designed and implemented a 3D detector (PointRCNN) and tracker (Kalman filter-based) pipeline to pre-populate object tracks to speed up the annotation of dynamic agents (cars, pedestrians, etc.) in LiDAR point clouds.
+				\item Worked closely with the teams in Palo Alto to integrate the tracker pipeline in the UI tool for point cloud annotation.
 			\end{itemize}
 			
 		\end{cvsubsection}
 		
 		
-		\begin{cvsubsection}{Software Engineer (Part-time)}{Terraloupe Gmbh}{Aug 2016 - April 2017}
+		\begin{cvsubsection}{Software Engineer (Part-time)}{Terraloupe Gmbh, Munich}{Aug 2016 - April 2017}
 			\textbf{Technologies Used}: Python, Keras, OpenCV
 			\begin{itemize}
-				\item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects (roof, chimney etc.) from aerial images.
-				\item Implemented geo spatial algorithms to generate refined shape boundaries for detected objects. The roof area was calculated from the point cloud of given region and roof object boundaries.
+				\item Experimented with various deep convolutional network architectures (PSPNet, UNet etc.) for semantic segmentation of roof objects attributes (solar panel, chimney etc.) from aerial images.
+				\item Implemented geo spatial algorithms that used segmentation output and point clouds to extract the available roof area for installing solar panels across different German cities.
 			\end{itemize}
 		\end{cvsubsection}
 		
@@ -135,23 +135,6 @@
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	
-	
-	
-	\begin{cvsection}{Technical Skills}
-		\begin{cvsubsection}{}{}{}    
-			\begin{itemize}
-				\item Programming Languages: Python (Advanced), C++ (Intermidiate), Java (Intermidiate).
-				\item ML/CV Toolkits: Tensorflow, PyTorch, OpenCV, ROS, SciPy.
-				\item Others: GNU/Linux, Docker, Amazon Web Services.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{References}
-		
-		\printbibliography[heading=none]
-		
-	\end{cvsection}
+
 	
 \end{document}
