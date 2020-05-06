@@ -22,7 +22,7 @@
 \ProvidesClass{mcdowellcv}[2017/06/18 v1.2.0 McDowell CV class]
 
 % Set up the fonts according to options
-\def\mainfontsize{10pt}
+\def\mainfontsize{9pt}
 %\def\mainfontface{Times New Roman}
 
 %\DeclareOption{calibri}{%
@@ -35,7 +35,7 @@
 \LoadClass[letterpaper,\mainfontsize]{article} 
 
 % Set document margins
-\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} 
+\usepackage[left=0.4in,top=0.1in,right=0.4in,bottom=0.2in]{geometry} 
 
 % Set font face
 \usepackage{fontspec}
@@ -86,7 +86,7 @@
 
 \ifthenelse{\equal{\platformname}{\notwindowsname}}{
 	\def\namespaceskip{0.575em}
-	\def\afterheaderspace{1.1pt}
+	\def\afterheaderspace{0.1pt}
 	\def\beforesectionheaderspace{5pt}
 	\def\sectionheadermargin{6pt}
 	\def\beforesectionheaderhrulespace{2.85pt}
@@ -97,10 +97,10 @@
 	\def\aftermultilinesubsectionheaderspace{-7.75pt}
 	\def\afteremptysubsectionheaderspace{1.25pt}
 	\def\subsectionmargin{9pt}
-	\def\aftersubsectionspace{2.1pt}
+	\def\aftersubsectionspace{1.5pt}
 }{
 	\def\namespaceskip{0.4em}
-	\def\afterheaderspace{3pt}
+	\def\afterheaderspace{1pt}
 	\def\beforesectionheaderspace{4.75pt}
 	\def\sectionheadermargin{6pt}
 	\def\beforesectionheaderhrulespace{3pt}
@@ -151,7 +151,7 @@
 	\spaceskip \namespaceskip \relax
 	\textbf{\LARGE\textls[110]{\textbf{\textsc{\@name}}}} \linebreak \linebreak
 	\small{Email: \href{mailto:\@email}{\@email}}      \linebreak
-%	\small{Github: \href{\@github}{\@github}}   \linebreak
+	\small{Github: \href{\@github}{\@github}}   \linebreak
 	\small{Linkedin: \href{\@linkedin}{\@linkedin}} \linebreak
 }
 
